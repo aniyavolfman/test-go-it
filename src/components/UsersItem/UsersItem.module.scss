@@ -45,7 +45,7 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
-   left: 108px;
+   left: 104px;
   @media (min-width: 480px) {
      left: 158px;
   }
@@ -55,7 +55,7 @@
 
 .avatar {
   position: absolute;
- left: 110px;
+ left: 106px;
    @media (min-width: 480px) {
      left: 160px;
   }
@@ -66,7 +66,7 @@
 .top::before {
   content: '';
   position: absolute;
-  left: 100px;
+  left: 96px;
   @media (min-width: 480px) {
     left: 150px;
   }
