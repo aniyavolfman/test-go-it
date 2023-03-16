@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import css from './UsersItem.module.scss';
 
 export default function UsersItem({
   id,
@@ -14,15 +15,24 @@ export default function UsersItem({
   let formattedFollowersSecond = followers.toString().slice(3).split(' ');
   let arr = [formattedFollowersFirst, formattedFollowersSecond];
 
+  const styleArr = [];
+  if (textContentBtn[0]?.textContent === 'follow') {
+    styleArr.push(css.button);
+  } else {
+    styleArr.push(css.buttonActive);
+  }
   return (
-    <li>
-      <img src={avatar} alt="Avatar" width="300" />
-      <p>{user}</p>
-      <p>{tweets}</p>
-      <p>{arr.join(',')}</p>
-      <button type="button" id={id} onClick={onClick}>
-        {textContentBtn[0]?.textContent.toLowerCase()}
-      </button>
+    <li className={css.card}>
+      <div className={css.top}>
+        <img src={avatar} alt="Avatar" width="59" className={css.avatar} />
+      </div>
+      <div className={css.bottom}>
+        <p className={css.text}>{tweets} tweets</p>
+        <p className={css.text}>{arr.join(',')} followers</p>
+        <button type="button" id={id} onClick={onClick} className={styleArr}>
+          {textContentBtn[0]?.textContent}
+        </button>
+      </div>
     </li>
   );
 }

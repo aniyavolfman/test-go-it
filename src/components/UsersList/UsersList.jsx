@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import UsersItem from 'components/UsersItem/UsersItem';
+import css from './UserList.module.scss';
 
 export default function UsersList({ users, onClick, textContentBtn }) {
   return (
-    <ul>
+    <ul className={css.userList}>
       {users.map(({ id, user, tweets, followers, avatar }) => (
         <UsersItem
           key={id}

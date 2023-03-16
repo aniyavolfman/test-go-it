@@ -1,6 +1,7 @@
 import { useEffect, useState } from 'react';
 import users from '../data/users.json';
 import UsersList from './UsersList/UsersList';
+import css from './App.module.scss'
 
 export const App = () => {
   const [usersList, setUsersList] = useState(
@@ -68,8 +69,8 @@ export const App = () => {
     <>
       <header></header>
       <main>
-        <section>
-          <h1>Users</h1>
+        <section className={css.container}>
+          <h1 className={css.visuallyHidden}>Users</h1>
           <UsersList
             users={usersList}
             onClick={handleOnClick}
