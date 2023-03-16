@@ -1,0 +1,35 @@
+[{
+"id": 1,
+"user": "Elon Reeve Musk",
+"tweets": 777,
+"followers": 100500,
+"avatar": "https://cdn-icons-png.flaticon.com/512/2977/2977285.png"
+},
+{
+"id": 2,
+"user": "Sponge Bob",
+"tweets": 333,
+"followers": 900500,
+"avatar": "https://cdn-icons-png.flaticon.com/512/1623/1623681.png"
+},{
+"id": 3,
+"user": "Scrooge McDuck",
+"tweets": 444,
+"followers": 100900,
+"avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998592.png"
+},
+{
+"id": 4,
+"user": "Captain Jack Sparrow",
+"tweets": 111,
+"followers": 103500,
+"avatar": "https://cdn-icons-png.flaticon.com/512/616/616438.png"
+},
+{
+"id": 5,
+"user": "Peppa Pig",
+"tweets": 999,
+"followers": 500100,
+"avatar": "https://cdn-icons-png.flaticon.com/512/1998/1998749.png"
+}
+]
