@@ -28,7 +28,7 @@ export default function UsersItem({
       </div>
       <div className={css.bottom}>
         <p className={css.text}>{tweets} tweets</p>
-        <p className={css.text}>{arr.join(',')} followers</p>
+        <p className={css.textLast}>{arr.join(',')} followers</p>
         <button type="button" id={id} onClick={onClick} className={styleArr}>
           {textContentBtn[0]?.textContent}
         </button>
