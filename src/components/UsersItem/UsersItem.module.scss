@@ -18,7 +18,7 @@
   content: '';
   position: absolute;
   width: 269px;
-   @media (min-width: 480px) {
+  @media (min-width: 480px) {
     width: 380px;
   }
   height: 8px;
@@ -45,9 +45,9 @@
   width: 64px;
   height: 64px;
   border-radius: 50%;
-   left: 104px;
+  left: 104px;
   @media (min-width: 480px) {
-     left: 158px;
+    left: 158px;
   }
   top: 189px;
   z-index: 2;
@@ -55,9 +55,9 @@
 
 .avatar {
   position: absolute;
- left: 106px;
-   @media (min-width: 480px) {
-     left: 160px;
+  left: 106px;
+  @media (min-width: 480px) {
+    left: 160px;
   }
   top: 191px;
   z-index: 3;
@@ -74,9 +74,9 @@
   width: 80px;
   height: 80px;
   z-index: 4;
-  background-repeat: no-repeat;
-  background-position: top;
-  background-image: url('../../images/Ellipse.png');
+  border-radius: 50%;
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  border: 10px solid #ebd8ff;
 }
 
 .top::after {
@@ -94,6 +94,7 @@
 
 .button {
   display: flex;
+  border: none;
   flex-direction: row;
   justify-content: center;
   align-items: center;
@@ -116,9 +117,17 @@
   margin-top: 26px;
 }
 
+.button:hover {
+  background: #5cd3a8;
+}
+
 .buttonActive {
   composes: button;
   background: #5cd3a8;
+}
+
+.buttonActive:hover {
+  background: #ebd8ff;
 }
 
 .bottom {
@@ -135,11 +144,11 @@
 .text {
   font-style: normal;
   font-weight: 500;
-    font-size: 18px;
+  font-size: 18px;
   @media (min-width: 480px) {
-     font-size: 20px;
+    font-size: 20px;
   }
-  
+
   line-height: 1.2;
   text-transform: uppercase;
   color: #ebd8ff;
