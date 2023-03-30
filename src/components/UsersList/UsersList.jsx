@@ -1,7 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import UsersItem from 'components/UsersItem/UsersItem';
-import css from './UserList.module.scss';
+import css from './UsersList.module.scss';
 
 export default function UsersList({ users, onClick, textContentBtn }) {
   return (

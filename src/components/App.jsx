@@ -3,7 +3,7 @@ import users from '../data/users.json';
 import UsersList from './UsersList/UsersList';
 import css from './App.module.scss'
 
-export const App = () => {
+export function App () {
   const [usersList, setUsersList] = useState(
     JSON.parse(localStorage.getItem('users')) ?? users
   );

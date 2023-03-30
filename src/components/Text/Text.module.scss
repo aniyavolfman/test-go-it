@@ -1,0 +1,17 @@
+.text {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  @media (min-width: 480px) {
+    font-size: 20px;
+  }
+
+  line-height: 1.2;
+  text-transform: uppercase;
+  color: #ebd8ff;
+}
+
+.textLast {
+  composes: text;
+  margin-top: 16px;
+}

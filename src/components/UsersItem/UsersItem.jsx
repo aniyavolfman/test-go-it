@@ -1,10 +1,11 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import css from './UsersItem.module.scss';
+import { Button } from 'components/Button/Button';
+import { Text } from 'components/Text/Text';
 
 export default function UsersItem({
   id,
-  user,
   tweets,
   followers,
   avatar,
@@ -15,23 +16,15 @@ export default function UsersItem({
   let formattedFollowersSecond = followers.toString().slice(3).split(' ');
   let arr = [formattedFollowersFirst, formattedFollowersSecond];
 
-  const styleArr = [];
-  if (textContentBtn[0]?.textContent === 'follow') {
-    styleArr.push(css.button);
-  } else {
-    styleArr.push(css.buttonActive);
-  }
+ 
   return (
     <li className={css.card}>
       <div className={css.top}>
         <img src={avatar} alt="Avatar" width="59" className={css.avatar} />
       </div>
       <div className={css.bottom}>
-        <p className={css.text}>{tweets} tweets</p>
-        <p className={css.textLast}>{arr.join(',')} followers</p>
-        <button type="button" id={id} onClick={onClick} className={styleArr}>
-          {textContentBtn[0]?.textContent}
-        </button>
+        <Text tweets={tweets} arr={arr} />
+        <Button id={id} onClick={onClick} textContentBtn={textContentBtn} />
       </div>
     </li>
   );
